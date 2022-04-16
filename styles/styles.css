@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,4 +227,130 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+#logo1 {
+  position: absolute;
+  left: 150px;
+  display: inline-block;
+  font-size: 100px;
+  font-weight: bolder;
+  font-stretch: ultra-expanded;
+  color: cyan;
+  font-family: "Roboto", sans-serif;
+}
+
+#logo2 {
+  position: absolute;
+  left: 158px;
+  display: inline-block;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  font-stretch: ultra-expanded;
+  color: rgb(241, 92, 46);
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 100px;
+  left: 32%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+.tagcloud--item:hover {
+  color: #FFC300;
+}
+
+.text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.stretch {
+  font-size: 70px;
+  -webkit-transition: 0.2s ease-in-out color;
+  transition: 0.2s ease-in-out color;
+}
+
+.stretch:hover {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-animation: animation 1s ease-in-out forwards;
+          animation: animation 1s ease-in-out forwards;
+  color: cyan;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes animation {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+h1 .space {
+  padding-left: 12px;
 }
