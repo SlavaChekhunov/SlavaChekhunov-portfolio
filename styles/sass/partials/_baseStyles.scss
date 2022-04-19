@@ -1,4 +1,20 @@
+$primary: #084b6d;
+$secondary: #f4fcff;
+$tertiary: #f8fbf3;
+$quaternary: #fff5f5;
+$quinary: #ffd698;
+$pastelBlue: #d3f0f9;
+$solidWhite: #fff;
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.wrapper {
+  max-width: 1160px;
+  width: 90%;
+  margin: 0 auto;
+}
 
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -8,3 +24,69 @@ h1 {
         padding-left: 12px;
     }
 }
+
+button {
+  position: relative;
+  color: $primary;
+  background-color: transparent;
+  padding: 14px 36px;
+  border: 2px solid $primary;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $primary;
+    
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  &:hover::before {
+    color: $solidWhite;
+    transform: scaleX(1);
+  }
+  &:focus::before {
+    color: $solidWhite;
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    color: $solidWhite;
+  }
+  &:focus {
+    color: $solidWhite;
+  }
+
+  span {
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: rgb(241, 92, 46);
+    animation: move 1.1s infinite ease-in-out;
+
+    &:nth-child(1) {
+      margin-top: 7.5px;
+      transform: rotate(45deg);
+    }
+    
+    &:nth-child(2) {
+      margin-top: 2.5px;
+      transform: rotate(-45deg);
+    }
+  }
+  
+}
+
+

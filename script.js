@@ -16,16 +16,16 @@ const Texts = [
   "HTML5",
   "CSS3",
   "JAVASCRIPT",
-  "Git & Command Line",
+  "Git",
   "REACT",
   "SASS",
   "GitHub",
-  "Pair-Programming",
-  "Responsive Design",
+  "JSON",
+  "ES5/ES6",
   "Firebase",
   "Rest APIs",
   "JQUERY",
-  "Version Control",
+  "npm",
 ];
 
 let tagCloud = new TagCloud('.Sphere', Texts, {
@@ -39,3 +39,16 @@ let tagCloud = new TagCloud('.Sphere', Texts, {
 const color = 'green';
 document.querySelector('.Sphere').style.color = color;
 //tagCloud done
+
+//mouseOver image effect
+
+// let container = document.querySelector('.headerImage');
+// let image = container.querySelector('.image-container')
+
+// container.addEventListener('mouseover', function(e) {
+//   console.log(e)
+//   const X = window.innerWidth - e.pageX;
+//   const Y = window.innerHeight - e.pageY;
+
+//   image.style.transform = `translateX(${X})` + `translateY(${Y})`
+// })

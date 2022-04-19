@@ -1,0 +1,38 @@
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .logo,
+    .headerNav {
+        padding-top: 10px;
+    }
+}
+
+.headerDisplay {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    
+
+
+     .headerImage {
+        width: 45%;
+        img {
+            max-width: 100%; 
+            vertical-align: middle;
+        }
+    }
+}
+
+.call {
+    display: flex;
+    justify-content: flex-start;
+
+    a{
+
+        padding-right: 100px;
+    }
+}
