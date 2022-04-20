@@ -14,15 +14,43 @@ nav {
 
   li:last-child {
     margin-right: 70px;
+    // border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid $primary;
+    cursor: pointer;
+  a {
+    padding: 10px 15px 10px;
+    position: relative;
+    &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: cyan;
+    transition: transform 300ms ease-in-out;
+
+    transform: scaleX(0);
+    }
+    &:hover::before,
+    &:focus::before {
+      transform: scaleX(1);
+    }
+  }
   }
 
   li a {
+    color: rgb(97, 96, 96);
     display: inline-block;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     padding: 15px 40px 10px 40px;
     text-decoration: none;
     text-align: center;
+    &:hover {
+      color: black;
+    }
   }
 }
 

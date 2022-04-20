@@ -1,6 +1,7 @@
 $nav-load-time: 300ms;
 $nav-link-load-time: 500ms;
 $article-load-delay: $nav-link-load-time + $nav-load-time;
+$image-load-delay: $nav-link-load-time + $nav-load-time + 200ms;
 
 
 
@@ -33,12 +34,26 @@ nav {
         }
 
 
-         p {
+         button {
             animation: article-load 300ms ease-in $article-load-delay + 200ms;
             animation-fill-mode: forwards;
             transform: translateY(-20px);
             opacity: 0;
         }
+
+}
+
+.headerImage {
+
+
+    img {
+        animation: image-load 300ms ease-in $image-load-delay + 200ms;
+        animation-fill-mode: forwards;
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+
 }
 
 
@@ -112,4 +127,17 @@ nav {
     100% { margin-left: 12px;
     
     }
+}
+
+@keyframes image-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
 }

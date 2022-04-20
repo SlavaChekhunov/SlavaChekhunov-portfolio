@@ -40,15 +40,3 @@ const color = 'green';
 document.querySelector('.Sphere').style.color = color;
 //tagCloud done
 
-//mouseOver image effect
-
-// let container = document.querySelector('.headerImage');
-// let image = container.querySelector('.image-container')
-
-// container.addEventListener('mouseover', function(e) {
-//   console.log(e)
-//   const X = window.innerWidth - e.pageX;
-//   const Y = window.innerHeight - e.pageY;
-
-//   image.style.transform = `translateX(${X})` + `translateY(${Y})`
-// })

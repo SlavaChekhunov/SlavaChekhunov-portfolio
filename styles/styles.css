@@ -264,9 +264,19 @@ nav li:last-child {
           transform: translateY(-20px);
   opacity: 0;
 }
-.headerDisplay p {
+.headerDisplay button {
   -webkit-animation: article-load 300ms ease-in 1000ms;
           animation: article-load 300ms ease-in 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  opacity: 0;
+}
+
+.headerImage img {
+  -webkit-animation: image-load 300ms ease-in 1200ms;
+          animation: image-load 300ms ease-in 1200ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateY(-20px);
@@ -395,6 +405,30 @@ nav li:last-child {
   }
   100% {
     margin-left: 12px;
+  }
+}
+@-webkit-keyframes image-load {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes image-load {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 #logo1 {
@@ -622,14 +656,44 @@ nav ul {
 }
 nav li:last-child {
   margin-right: 70px;
+  background-color: transparent;
+  border: 2px solid #084b6d;
+  cursor: pointer;
+}
+nav li:last-child a {
+  padding: 10px 15px 10px;
+  position: relative;
+}
+nav li:last-child a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: cyan;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+nav li:last-child a:hover::before, nav li:last-child a:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 nav li a {
+  color: rgb(97, 96, 96);
   display: inline-block;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   padding: 15px 40px 10px 40px;
   text-decoration: none;
   text-align: center;
+}
+nav li a:hover {
+  color: black;
 }
 
 .mainHeader {
@@ -654,6 +718,19 @@ nav li a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.headerDisplay .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.headerDisplay button {
+  margin-top: 25px;
+  width: 40%;
+}
 .headerDisplay .headerImage {
   width: 45%;
 }
@@ -672,4 +749,17 @@ nav li a {
 }
 .call a {
   padding-right: 100px;
+}
+
+.skillMatrix {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.skillMatrix .sphere {
+  width: 45%;
 }
