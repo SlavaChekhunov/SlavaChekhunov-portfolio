@@ -661,7 +661,7 @@ nav li:last-child {
   cursor: pointer;
 }
 nav li:last-child a {
-  padding: 10px 15px 10px;
+  padding: 11px 15px 11px;
   position: relative;
 }
 nav li:last-child a::before {
