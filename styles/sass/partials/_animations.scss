@@ -46,7 +46,7 @@ nav {
 .headerImage {
 
 
-    img {
+    .image-container {
         animation: image-load 300ms ease-in $image-load-delay + 200ms;
         animation-fill-mode: forwards;
         transform: translateY(-20px);
@@ -140,4 +140,75 @@ nav {
         opacity: 1;
     }
 
+}
+
+#Code {
+    animation: code 5s ease-in infinite;
+}
+
+@keyframes code {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+#space {
+    animation: light 1s ease-in infinite;
+}
+
+@keyframes light {
+    0% {
+        transform: translateY(1px);
+    
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#key17
+ {
+    animation: key 1s ease-in-out infinite;
+}
+
+
+
+@keyframes key {
+    0% {
+        transform: translateY(0px);
+        
+    
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
+}
+
+
+#key13
+ {
+    animation: keys 1s ease-in-out infinite;
+}
+
+
+@keyframes keys {
+    0% {
+        transform: translateY(0px);
+        
+    
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
 }

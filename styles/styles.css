@@ -274,7 +274,7 @@ nav li:last-child {
   opacity: 0;
 }
 
-.headerImage img {
+.headerImage .image-container {
   -webkit-animation: image-load 300ms ease-in 1200ms;
           animation: image-load 300ms ease-in 1200ms;
   -webkit-animation-fill-mode: forwards;
@@ -429,6 +429,114 @@ nav li:last-child {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
+  }
+}
+#Code {
+  -webkit-animation: code 5s ease-in infinite;
+          animation: code 5s ease-in infinite;
+}
+
+@-webkit-keyframes code {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes code {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#space {
+  -webkit-animation: light 1s ease-in infinite;
+          animation: light 1s ease-in infinite;
+}
+
+@-webkit-keyframes light {
+  0% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes light {
+  0% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+#key17 {
+  -webkit-animation: key 1s ease-in-out infinite;
+          animation: key 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes key {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+}
+
+@keyframes key {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+}
+#key13 {
+  -webkit-animation: keys 1s ease-in-out infinite;
+          animation: keys 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes keys {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+}
+
+@keyframes keys {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
 }
 #logo1 {

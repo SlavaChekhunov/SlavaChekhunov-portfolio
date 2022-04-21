@@ -1,71 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Slava's Portfolio</title>
-</head>
-<body>
-    <!-- HEADER -->
-    <header>
-        <div class="mainHeader wrapper">
-            <div class="logo">
-                <img width='30' height='40'src="./assets/Picture6.png" alt="Web developer logo" class="animation-logo">
-            </div>
-            <nav class="headerNav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact me!</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <section class="headerDisplay wrapper">
-            <div class="headerText">
-                <div class="text-container">
-                    <h1 class="rubber-stretch">
-                        <span class="stretch" >H</span>
-                        <span class="stretch" >i</span>
-                        <span class="stretch" >,</span>
-                        <br>
-                        <span class="stretch" >I</span>
-                        <span class="stretch" >'</span>
-                        <span class="stretch" >m</span>
-                        <span class="space" ></span>
-                        <img width='53' height='72'src="./assets/Picture7.png" alt="Web developer logo" class="animation-logo">
-                        <span class="stretch" >l</span>
-                        <span class="stretch" >a</span>
-                        <span class="stretch" >v</span>
-                        <span class="stretch" >a</span>
-                        <br>
-                        <span class="stretch" >C</span>
-                        <span class="stretch" >h</span>
-                        <span class="stretch" >e</span>
-                        <span class="stretch" >k</span>
-                        <span class="stretch" >h</span>
-                        <span class="stretch" >u</span>
-                        <span class="stretch" >n</span>
-                        <span class="stretch" >o</span>
-                        <span class="stretch" >v</span>
-                    </h1>
-                    
-                    <!-- <p>Front-end developer</p> -->
-                    <button>My Projects
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                </div>
-            </div>
-            <div class="headerImage">
-                <div class="image-container">
-                   <svg width="406" height="306" viewBox="0 0 406 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="406" height="306" viewBox="0 0 406 306" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="406" height="306" fill="white"/>
 <g id="Web Developer_Isometric 1">
 <g id="Web Developer">
@@ -112,7 +45,7 @@
 <path id="Vector_41" d="M170.682 177.36C167.863 181.29 163.868 184.222 159.274 185.734C152.839 187.693 143.48 186.749 140.1 180.04C133.95 167.799 139.725 152.472 133.229 140.566C132.479 139.061 131.419 137.732 130.12 136.665C128.82 135.598 127.31 134.817 125.687 134.375C121.475 133.451 118.582 136.618 117.06 140.343C114.319 147.022 114.421 155.334 114.553 162.45C114.56 168.197 114.977 173.936 115.801 179.623C115.801 179.623 119.74 203.486 150.433 197.081C155.749 196.118 160.854 194.228 165.516 191.499C167.905 190.121 169.996 188.282 171.667 186.089C173.565 183.328 172.296 180.09 170.682 177.36Z" fill="#68E1FD"/>
 </g>
 <g id="leftFlower">
-    <path id="Vector_42" d="M61.915 106.31C61.6308 105.731 60.7478 106.239 61.0421 106.817C67.4062 119.647 68.6445 134.091 69.7914 148.118C69.8422 148.757 70.8572 148.767 70.8064 148.118C69.6595 133.857 68.3806 119.261 61.915 106.31Z" fill="#007F68"/>
+<path id="Vector_42" d="M61.915 106.31C61.6308 105.731 60.7478 106.239 61.0421 106.817C67.4062 119.647 68.6445 134.091 69.7914 148.118C69.8422 148.757 70.8572 148.767 70.8064 148.118C69.6595 133.857 68.3806 119.261 61.915 106.31Z" fill="#007F68"/>
 <path id="Vector_43" d="M61.1132 106.391C61.1132 106.391 62.8894 113.05 61.0523 116.379C59.2151 119.708 57.7028 120.368 59.8952 124.499C62.0876 128.63 67.9543 129.188 68.34 132.355C68.7257 135.522 65.5386 112.045 61.1132 106.391Z" fill="#007F68"/>
 </g>
 <g id="rightFlower">
@@ -226,39 +159,3 @@
 </linearGradient>
 </defs>
 </svg>
-                </div>
-            </div>
-        </section>
-    </header>
-    <!-- MAIN -->
-    <!-- <section class="skills">
-        <div class="skillMatrix wrapper">
-                <div class="textSkills">
-                    <h2>My Skills</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                    including versions of Lorem Ipsum.
-                    </p>
-                </div>
-                <div class="sphere">
-                    <span class="Sphere"></span>
-                </div>
-        </div> -->
-
-
-    </section>
-
-
-
-
-
-
-
-
-   
-</body>
-</html>
