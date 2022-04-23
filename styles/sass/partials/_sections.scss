@@ -7,7 +7,99 @@ section {
         padding-top: 50px;
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
+
+        .textContainer {
+            width: 60%;
+        }
     }
+
+    .tagcloud {
+        display: inline;
+        margin-right: 350px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 485px;
+            background-color: $primary;
+            height: 5px;
+            border-radius: 10px;
+            margin: 13px 50px 0 -530px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
+    
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 410px;
+            background-color: $primary;
+            height: 5px;
+            border-radius: 10px;
+            margin: 13px 0 0 50px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
+           
+        }
+
+}
+
+}
+
+.projects {
+    .projectView {
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: row;
+
+        .movie {
+            width: 85%;
+        img {
+            max-width: 100%; 
+            vertical-align: middle;
+        }
+        }
+
+        .description {
+            padding-top: 150px;
+        }
+    }
+
+.projectViewTwo {
+        display: flex;
+        justify-content: space-between;
+
+        .planted {
+            width: 85%;
+        img {
+            max-width: 100%; 
+            vertical-align: middle;
+        }
+        }
+
+        .description {
+            padding-top: 150px;
+            padding-left: 65px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
     h2 {
         text-align: center;
@@ -20,6 +112,9 @@ section {
             height: 5px;
             border-radius: 10px;
             margin: 13px 50px 0 -530px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
     
         }
         &::after {
@@ -30,8 +125,12 @@ section {
             height: 5px;
             border-radius: 10px;
             margin: 13px 0 0 50px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
         }
 
 }
-
 }
+
+

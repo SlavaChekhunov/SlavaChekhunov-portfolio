@@ -34,7 +34,7 @@ nav {
         }
 
 
-         button {
+         a {
             animation: article-load 300ms ease-in $article-load-delay + 200ms;
             animation-fill-mode: forwards;
             transform: translateY(-20px);
@@ -210,5 +210,17 @@ nav {
 
     100% {
         transform: translateY(1px);
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: right;
+    
+    }
+
+    100% {
+
+        background-position: left;
     }
 }

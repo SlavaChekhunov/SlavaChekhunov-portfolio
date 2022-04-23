@@ -23,7 +23,7 @@ const Texts = [
   "JSON",
   "ES5/ES6",
   "Firebase",
-  "Rest APIs",
+  "Rest",
   "JQUERY",
   "npm",
 ];
