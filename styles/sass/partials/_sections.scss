@@ -70,6 +70,7 @@ section {
 
         .description {
             padding-top: 150px;
+            padding-right: 50px;
         }
     }
 
@@ -78,7 +79,7 @@ section {
         justify-content: space-between;
 
         .planted {
-            width: 85%;
+            width: 100%;
         img {
             max-width: 100%; 
             vertical-align: middle;
@@ -90,15 +91,6 @@ section {
             padding-left: 65px;
         }
     }
-
-
-
-
-
-
-
-
-
 
 
     h2 {
@@ -131,6 +123,47 @@ section {
         }
 
 }
+}
+
+.contact {
+
+
+
+
+
+
+h2 {
+        text-align: center;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 485px;
+            background-color: $primary;
+            height: 5px;
+            border-radius: 10px;
+            margin: 13px 50px 0 -530px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
+    
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 410px;
+            background-color: $primary;
+            height: 5px;
+            border-radius: 10px;
+            margin: 13px 0 0 50px;
+            background-image: $gradient;
+            background-size: 400%;
+            animation: bg-animation 20s infinite;
+        }
+
+}
+
+
 }
 
 
