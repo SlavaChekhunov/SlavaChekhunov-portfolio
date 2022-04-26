@@ -10,16 +10,28 @@ section {
         flex-direction: row;
 
         .textContainer {
-            width: 60%;
+            padding-top: 70px;
+            width: 50%;
+
+            &::before {
+                content: '<p>';
+                font-family: 'Cedarville Cursive', cursive;
+            }
+
+            &::after {
+                content: '</p>';
+                font-family: 'Cedarville Cursive', cursive;
+
+            }
         }
+
+        
     }
 
-    .tagcloud {
-        display: inline;
-        margin-right: 350px;
-    }
+    
 
     h2 {
+        margin-top: 70px;
         margin-bottom: 30px;
         text-align: center;
         position: relative;
@@ -55,10 +67,31 @@ section {
 }
 
 .projects {
+    .movie-button {
+    text-decoration: none;
+  color: $primary;
+  background-color: transparent;
+  padding: 10px 24px;
+  border: 2px solid $primary;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $primary;
+    color: $solidWhite;
+  }
+  &:focus {
+    background-color: $primary;
+    color: $solidWhite;
+  }
+
+}
     .projectView {
         display: flex;
         justify-content: space-between;
-        // flex-direction: row;
 
         .movie {
             width: 85%;

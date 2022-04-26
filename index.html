@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="tagcanvas.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/fab76b7aa3.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="./styles/styles.css">
@@ -17,9 +17,12 @@
             <div class="logo">
                 <img width='30' height='40'src="./assets/Picture6.png" alt="Web developer logo" class="animation-logo">
             </div>
+            <div class="menu-btn">
+                <div class="menuBurger"></div>
+            </div>
             <nav class="headerNav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Resume</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#contact">Contact me!</a></li>
@@ -56,7 +59,7 @@
                         <span class="stretch" >v</span>
                     </h1>
                     
-                    <!-- <p>Front-end developer</p> -->
+                    <p>Front-end web developer from Toronto</p>
                     <a href="#projects" class="project-button">My Projects
                         <span></span>
                         <span></span>
@@ -66,7 +69,7 @@
             </div>
             <div class="headerImage">
                 <div class="image-container">
-                   <svg width="406" height="306" viewBox="0 0 406 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <svg width="456" height="356" viewBox="0 0 406 306" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="406" height="306" fill="white"/>
 <g id="Web Developer_Isometric 1">
 <g id="Web Developer">
@@ -246,8 +249,26 @@
                     listening to podcasts on a walk and cooking a healthy meal at home. </p>
                     <p>Check out some of my work and feel free to contact me either on LinkedIn or via email!</p>
                 </div>
-                <div class="sphere">
-                    <span class="Sphere"></span>
+                <div class="skillsSphere">
+                    <div class="myCanvas" id="myCanvasContainer">
+                        <canvas width="500" height="500" id="myCanvas">
+                                <ul id="tags">
+                                    <li><a href="#" target="_blank">HTML</a></li>
+                                    <li><a href="#" target="_blank">CSS</a></li>
+                                    <li><a href="#" target="_blank">Javascript</a></li>
+                                    <li><a href="#" target="_blank">ReactJS</a></li>
+                                    <li><a href="#" target="_blank">Firebase</a></li>
+                                    <li><a href="#" target="_blank">JSON</a></li>
+                                    <li><a href="#" target="_blank">Github</a></li>
+                                    <li><a href="#" target="_blank">npm</a></li>
+                                    <li><a href="#" target="_blank">SASS</a></li>
+                                    <li><a href="#" target="_blank">Git</a></li>
+                                    <li><a href="#" target="_blank">jQuery</a></li>
+                                    <li><a href="#" target="_blank">Rest</a></li>
+                                </ul>
+                        </canvas>
+                        <!-- screen-reader class to describe the canvas -->
+                    </div>
                 </div>
         </div>
     </section>
@@ -264,8 +285,8 @@
                 <h3>Movie Plus</h3>
                 <p>HTML | CSS | SCSS | JS | APIs</p>
                 <p>An app that features your favorite movie genres as well as the ability to search any movie of choice.</p>
-                <a class="movie-button"href="#">Demo</a>
-                <a class="movie-button"href="#">View Source</a>
+                <a class="movie-button"href="https://whimsical-tartufo-69d928.netlify.app/">Demo</a>
+                <a class="movie-button"href="https://github.com/MoviePlusPairProject/MoviePlusPairProject">View Source</a>
             </div>
         </div>
         <div class="projectViewTwo">
@@ -273,8 +294,8 @@
                 <h3>Planted Invitation</h3>
                 <p>HTML | CSS | SCSS </p>
                 <p>A single page PSD conversion design provided by the instructors at Juno College that is semantically accessible and responsive to the user.</p>
-                <a class="movie-button"href="#">Demo</a>
-                <a class="movie-button"href="#">View Source</a>
+                <a class="movie-button"href="https://dainty-tiramisu-c0d2d2.netlify.app/">Demo</a>
+                <a class="movie-button"href="https://github.com/SlavaChekhunov/SlavaChekhunovProjectOne">View Source</a>
             </div>
             <div class="planted">
                 <img src="./assets/Planted Laptop.png" alt="Laptop and mobile view of the planted project with a description">

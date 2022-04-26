@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html {
@@ -229,6 +230,95 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1160px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+h1 .space {
+  padding-left: 12px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.project-button {
+  font-family: sans-serif;
+  position: relative;
+  color: #084b6d;
+  background-color: transparent;
+  padding: 14px 36px;
+  border: 2px solid #084b6d;
+  font-size: 12.8px;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  z-index: 1;
+}
+.project-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #084b6d;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.project-button:hover::before {
+  color: #fff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.project-button:focus::before {
+  color: #fff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.project-button:hover {
+  color: #fff;
+}
+.project-button:focus {
+  color: #fff;
+}
+.project-button span {
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: rgb(241, 92, 46);
+  -webkit-animation: move 1.1s infinite ease-in-out;
+          animation: move 1.1s infinite ease-in-out;
+}
+.project-button span:nth-child(1) {
+  margin-top: 7.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.project-button span:nth-child(2) {
+  margin-top: 2.5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 nav li {
   -webkit-animation-name: nav-links-load;
           animation-name: nav-links-load;
@@ -255,7 +345,7 @@ nav li:last-child {
           animation: nav-load 300ms ease-in;
 }
 
-.headerDisplay h1 {
+.headerDisplay .text-container {
   -webkit-animation: article-load 300ms ease-in 800ms;
           animation: article-load 300ms ease-in 800ms;
   -webkit-animation-fill-mode: forwards;
@@ -264,9 +354,10 @@ nav li:last-child {
           transform: translateY(-20px);
   opacity: 0;
 }
-.headerDisplay a {
-  -webkit-animation: article-load 300ms ease-in 1000ms;
-          animation: article-load 300ms ease-in 1000ms;
+
+.headerImage .image-container {
+  -webkit-animation: image-load 300ms ease-in 1100ms;
+          animation: image-load 300ms ease-in 1100ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateY(-20px);
@@ -274,9 +365,9 @@ nav li:last-child {
   opacity: 0;
 }
 
-.headerImage .image-container {
-  -webkit-animation: image-load 300ms ease-in 1200ms;
-          animation: image-load 300ms ease-in 1200ms;
+.about {
+  -webkit-animation: article-load 300ms ease-in 900ms;
+          animation: article-load 300ms ease-in 900ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateY(-20px);
@@ -555,120 +646,6 @@ nav li:last-child {
     background-position: left;
   }
 }
-@media (max-width: 1000px) {
-  .headerImage .image-container {
-    display: none;
-  }
-
-  .about {
-    margin-top: 350px;
-  }
-
-  .aboutMatrix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .aboutMatrix .sphere {
-    width: 0;
-    margin-top: 450px;
-    margin-right: 300px;
-    margin-bottom: 200px;
-  }
-}
-.wrapper {
-  max-width: 1160px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-h1 .space {
-  padding-left: 12px;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-
-.project-button {
-  font-family: sans-serif;
-  position: relative;
-  color: #084b6d;
-  background-color: transparent;
-  padding: 14px 36px;
-  border: 2px solid #084b6d;
-  font-size: 12.8px;
-  font-weight: bold;
-  line-height: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  z-index: 1;
-}
-.project-button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: #084b6d;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-}
-.project-button:hover::before {
-  color: #fff;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-.project-button:focus::before {
-  color: #fff;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-.project-button:hover {
-  color: #fff;
-}
-.project-button:focus {
-  color: #fff;
-}
-.project-button span {
-  position: absolute;
-  width: 3px;
-  height: 10px;
-  border-radius: 6px;
-  background-color: rgb(241, 92, 46);
-  -webkit-animation: move 1.1s infinite ease-in-out;
-          animation: move 1.1s infinite ease-in-out;
-}
-.project-button span:nth-child(1) {
-  margin-top: 7.5px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.project-button span:nth-child(2) {
-  margin-top: 2.5px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 #logo1 {
   position: absolute;
   left: 150px;
@@ -703,6 +680,141 @@ p {
 
 .tagcloud--item:hover {
   color: #FFC300;
+}
+
+.mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainHeader .logo,
+.mainHeader .headerNav {
+  padding-top: 10px;
+}
+.mainHeader .menu-btn {
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.mainHeader .menu-btn .menuBurger {
+  width: 50px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(15, 119, 216, 0.2);
+          box-shadow: 0 2px 5px rgba(15, 119, 216, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.mainHeader .menu-btn .menuBurger::before, .mainHeader .menu-btn .menuBurger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(15, 119, 216, 0.2);
+          box-shadow: 0 2px 5px rgba(15, 119, 216, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.mainHeader .menu-btn .menuBurger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+.mainHeader .menu-btn .menuBurger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+.mainHeader .menu-btn.open .menuBurger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.mainHeader .menu-btn.open .menuBurger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+.mainHeader .menu-btn.open .menuBurger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.headerDisplay {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.headerDisplay .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.headerDisplay .text-container::before {
+  position: absolute;
+  margin-top: 260px;
+  content: "<p>";
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 17px;
+  color: rgb(141, 136, 136);
+}
+.headerDisplay a {
+  text-decoration: none;
+  margin-top: 25px;
+  width: 40%;
+}
+.headerDisplay p {
+  position: relative;
+  font-size: 17px;
+  color: rgb(141, 136, 136);
+}
+.headerDisplay p::before {
+  position: absolute;
+  margin-top: 25px;
+  content: "</p>";
+  font-family: "Cedarville Cursive", cursive;
+}
+.headerDisplay .headerImage {
+  width: 45%;
+}
+.headerDisplay .headerImage img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.call a {
+  padding-right: 100px;
 }
 
 .text-container {
@@ -851,218 +963,6 @@ nav li a:hover {
   color: black;
 }
 
-.mainHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.mainHeader .logo,
-.mainHeader .headerNav {
-  padding-top: 10px;
-}
-
-.headerDisplay {
-  padding-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.headerDisplay .text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.headerDisplay a {
-  text-decoration: none;
-  margin-top: 25px;
-  width: 40%;
-}
-.headerDisplay .headerImage {
-  width: 45%;
-}
-.headerDisplay .headerImage img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.call {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.call a {
-  padding-right: 100px;
-}
-
-section {
-  padding-bottom: 100px;
-}
-
-.about .aboutMatrix {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.about .aboutMatrix .textContainer {
-  width: 60%;
-}
-.about .tagcloud {
-  display: inline;
-  margin-right: 350px;
-}
-.about h2 {
-  margin-bottom: 30px;
-  text-align: center;
-  position: relative;
-}
-.about h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.about h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-
-.projects .projectView {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects .projectView .movie {
-  width: 85%;
-}
-.projects .projectView .movie img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-.projects .projectView .description {
-  padding-top: 150px;
-  padding-right: 50px;
-}
-.projects .projectViewTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects .projectViewTwo .planted {
-  width: 100%;
-}
-.projects .projectViewTwo .planted img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-.projects .projectViewTwo .description {
-  padding-top: 150px;
-  padding-left: 65px;
-}
-.projects h2 {
-  text-align: center;
-  position: relative;
-}
-.projects h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.projects h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-
-.contact h2 {
-  text-align: center;
-  position: relative;
-}
-.contact h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.contact h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-
 .inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1202,4 +1102,306 @@ button:hover {
 button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+.about .aboutMatrix {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.about .aboutMatrix .textContainer {
+  padding-top: 70px;
+  width: 50%;
+}
+.about .aboutMatrix .textContainer::before {
+  content: "<p>";
+  font-family: "Cedarville Cursive", cursive;
+}
+.about .aboutMatrix .textContainer::after {
+  content: "</p>";
+  font-family: "Cedarville Cursive", cursive;
+}
+.about h2 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.about h2::before {
+  content: "";
+  position: absolute;
+  width: 485px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 50px 0 -530px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+.about h2::after {
+  content: "";
+  position: absolute;
+  width: 410px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 0 0 50px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+
+.projects .movie-button {
+  text-decoration: none;
+  color: #084b6d;
+  background-color: transparent;
+  padding: 10px 24px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects .movie-button:hover {
+  background-color: #084b6d;
+  color: #fff;
+}
+.projects .movie-button:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+.projects .projectView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects .projectView .movie {
+  width: 85%;
+}
+.projects .projectView .movie img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.projects .projectView .description {
+  padding-top: 150px;
+  padding-right: 50px;
+}
+.projects .projectViewTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects .projectViewTwo .planted {
+  width: 100%;
+}
+.projects .projectViewTwo .planted img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.projects .projectViewTwo .description {
+  padding-top: 150px;
+  padding-left: 65px;
+}
+.projects h2 {
+  text-align: center;
+  position: relative;
+}
+.projects h2::before {
+  content: "";
+  position: absolute;
+  width: 485px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 50px 0 -530px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+.projects h2::after {
+  content: "";
+  position: absolute;
+  width: 410px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 0 0 50px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+
+.contact h2 {
+  text-align: center;
+  position: relative;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  width: 485px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 50px 0 -530px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+.contact h2::after {
+  content: "";
+  position: absolute;
+  width: 410px;
+  background-color: #084b6d;
+  height: 5px;
+  border-radius: 10px;
+  margin: 13px 0 0 50px;
+  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
+  background-size: 400%;
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+}
+
+@media (max-width: 1000px) {
+  .headerImage .image-container {
+    display: none;
+  }
+
+  .about {
+    margin-top: 350px;
+  }
+  .about .aboutMatrix {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutMatrix .textContainer {
+    width: 100%;
+  }
+  .about .aboutMatrix .skillsSphere {
+    margin: 0 auto;
+  }
+
+  .projects .projectView {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectView .movie {
+    width: 100%;
+  }
+  .projects .projectView .description {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .projects .projectViewTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact .contact-text {
+    width: 25%;
+  }
+  .contact .contact-text ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-input {
+    width: 65%;
+    margin: 0;
+  }
+}
+@media (max-width: 750px) {
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 0;
+    margin-top: 400px;
+  }
+  .about .aboutMatrix .textContainer {
+    padding-top: 0;
+  }
+  .about .aboutMatrix canvas {
+    width: 400px;
+    height: 400px;
+  }
+
+  .projects {
+    padding-bottom: 30px;
+  }
+  .projects .projectView .description {
+    padding-left: 35px;
+  }
+  .projects .projectViewTwo .description {
+    padding-left: 35px;
+    padding-top: 75px;
+  }
+
+  .contact {
+    padding-bottom: 30px;
+  }
+  .contact .inner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-text {
+    padding-bottom: 75px;
+    width: 100%;
+  }
+  .contact .contact-text h3 {
+    text-align: center;
+  }
+  .contact .contact-text ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .contact-input {
+    width: 100%;
+    margin: 0;
+  }
 }

@@ -8,25 +8,174 @@
 
    .about {
        margin-top: 350px;
-       
-   }
+       .aboutMatrix {
+           padding-top: 50px;
+           flex-direction: column;
 
-   .aboutMatrix {
-       display: flex;
-       flex-direction: row;
-
-       
-       
-      .sphere {
-          width: 0;
-          margin-top: 450px;
-          margin-right: 300px;
-          margin-bottom: 200px;
+           .textContainer {
+               width: 100%;
+           }
+           
+           .skillsSphere {
+               margin: 0 auto;
+           }
+          
       }
    }
-  
 
-  
+   .projects {
+       .projectView {
+           flex-direction: column;
 
+           .movie {
+               width: 100%;
+           }
+
+           .description {
+               padding: 0;
+               margin: 0 auto;
+           }
+
+       }
+
+
+       .projectViewTwo {
+           flex-direction: column;
+
+
+       }
+   }
+
+
+   .contact {
+       .contact-text {
+           width: 25%;
+
+           ul {
+               flex-direction: column;
+           }
+       }
+
+     
+
+           .contact-input {
+               width: 65%;
+               margin: 0;
+           }
+       
+   }
  
 }
+
+@media (max-width: 750px) { 
+
+    .menu-btn {
+        display: flex;
+    }
+   
+    .headerNav {
+      display: none;
+    //   width: 100%;
+
+    
+    //   ul {
+    //       padding-top: 50px;
+    //       padding-left: 300px;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     width: 100%;
+    //   }
+
+    //   li:last-child {
+    //     border-radius: none;
+
+
+    //     a {
+    //       padding: 0.5rem 1rem;
+    //     }
+    //   }
+    //   .headerNav.active {
+    //     display: flex;
+    //   }
+  
+    }
+
+    
+    
+
+
+
+.about {
+    padding-bottom: 0;
+    margin-top: 400px;
+       
+       .aboutMatrix {
+           .textContainer {
+               padding-top: 0;
+           }
+           
+           canvas {
+               width: 400px;
+               height: 400px;
+           }
+          
+      }
+   }
+
+
+   .projects {
+       padding-bottom: 30px;
+       .projectView {
+
+           .description {
+               padding-left: 35px;
+           }
+
+       }
+
+
+       .projectViewTwo {
+            .description {
+               padding-left: 35px;
+               padding-top: 75px;
+           }
+       }
+   }
+
+    .contact {
+        padding-bottom: 30px;
+        .inner-container {
+            flex-direction: column;
+        }
+       
+    .contact-text {
+        padding-bottom: 75px;
+           width: 100%;
+        h3{
+            text-align: center;
+        }
+           ul {
+               flex-direction: row;
+           }
+       }
+     
+.contact-input {
+               width: 100%;
+               margin: 0;
+           }
+           
+       
+   }
+
+
+
+
+
+
+
+
+
+
+
+}
+

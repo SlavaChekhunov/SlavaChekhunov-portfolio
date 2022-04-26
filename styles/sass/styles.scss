@@ -1,12 +1,12 @@
 @import "partials/setup";
-@import "partials/animations";
-@import "partials/mediaQueries";
+@import "partials/variables";
 @import "partials/baseStyles";
+@import "partials/animations";
 @import "partials/logo";
 @import "partials/tagCloud";
+@import "partials/header";
 @import "partials/stretch";
 @import "partials/nav";
-@import "partials/header";
-@import "partials/variables";
-@import "partials/sections";
 @import "partials/form";
+@import "partials/sections";
+@import "partials/mediaQueries";

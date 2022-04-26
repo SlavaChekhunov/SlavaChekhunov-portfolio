@@ -1,4 +1,3 @@
-
 const elements = document.getElementsByClassName('rubber-stretch');
 
 for (let i = 0; i < elements.length; i++) {
@@ -11,32 +10,39 @@ for (let i = 0; i < elements.length; i++) {
   })
 }
 
-//tagCloud
-const Texts = [
-  "HTML5",
-  "CSS3",
-  "JAVASCRIPT",
-  "Git",
-  "REACT",
-  "SASS",
-  "GitHub",
-  "JSON",
-  "ES5/ES6",
-  "Firebase",
-  "Rest",
-  "JQUERY",
-  "npm",
-];
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector(".headerNav");
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    navLinks.classList.toggle("active");
+    menuOpen = false;
+  }
+})
 
-let tagCloud = new TagCloud('.Sphere', Texts, {
-  radius: 200,
-  maxSpeed: 'normal',
-  initSpeed: 'fast',
-  direction: 135,
-  keep: true,
-});
+// const toggleIcon = document.getElementsByClassName("toggle-button")[0];
 
-const color = 'green';
-document.querySelector('.Sphere').style.color = color;
-//tagCloud done
+// toggleIcon.addEventListener("click", function () {
+// });
+
+
+window.onload = function () {
+  try {
+    TagCanvas.Start("myCanvas", "tags", {
+      textColour: "#08fdd8",
+      outlineColour: "transparent",
+      reverse: true,
+      depth: 0.8,
+      maxSpeed: 0.05,
+      weight: true,
+      
+    });
+  } catch (e) {
+    document.getElementById("myCanvasContainer").style.display = "none";
+  }
+};
 
