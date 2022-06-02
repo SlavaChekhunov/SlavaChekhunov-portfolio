@@ -24,22 +24,47 @@ menuBtn.addEventListener('click', () => {
   }
 })
 
-// const toggleIcon = document.getElementsByClassName("toggle-button")[0];
+const portfolio = document.querySelector('.portfolioOne');
+const portfolioTwo = document.querySelector('.portfolioTwo');
+const portfolioThree = document.querySelector('.portfolioThree');
+const portfolioFour = document.querySelector('.portfolioFour');
 
-// toggleIcon.addEventListener("click", function () {
-// });
+const modal = document.querySelector('.modalOne');
+const modalTwo = document.querySelector('.modalTwo');
+const modalThree = document.querySelector('.modalThree');
+const modalFour = document.querySelector('.modalFour');
+
+
+
+portfolio.addEventListener('click', () => {
+  modal.classList.toggle('modal-active');
+})
+
+portfolioTwo.addEventListener('click', () => {
+  modalTwo.classList.toggle('modal-active');
+})
+
+portfolioThree.addEventListener('click', () => {
+  modalThree.classList.toggle('modal-active');
+})
+
+portfolioFour.addEventListener('click', () => {
+  modalFour.classList.toggle('modal-active');
+})
+
 
 
 window.onload = function () {
   try {
     TagCanvas.Start("myCanvas", "tags", {
-      textColour: "#08fdd8",
+      textColour: "#084b6d",
       outlineColour: "transparent",
       reverse: true,
       depth: 0.8,
-      maxSpeed: 0.05,
+      maxSpeed: 0.12,
       weight: true,
-      
+      textHeight: 25,
+      textFont: "Karla, sans-serif",
     });
   } catch (e) {
     document.getElementById("myCanvasContainer").style.display = "none";

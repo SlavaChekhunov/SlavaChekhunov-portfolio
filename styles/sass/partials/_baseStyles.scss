@@ -6,19 +6,8 @@ $quinary: #ffd698;
 $pastelBlue: #d3f0f9;
 $solidWhite: #fff;
 
-$gradient: linear-gradient(
-  45deg,
-  $primary,
-  cyan,
-  $primary
-);
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Karla:wght@200;400;700&family=Nanum+Pen+Script&family=Roboto:wght@400;700&display=swap');
 
 .wrapper {
   max-width: 1160px;
@@ -27,20 +16,46 @@ $gradient: linear-gradient(
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
-
+    
     .space {
-        padding-left: 12px;
+      padding-left: 12px;
     }
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.smallerText {
+  font-size: 1.2rem;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.smallerTextZoom {
+  font-size: 1.2rem;
+  font-family: 'Nanum Pen Script', cursive;
+  color: #EA5534;
+}
+
+.learn {
+  font-size: 1.4rem;
+  font-family: 'Nanum Pen Script', cursive;
+  color: #EA5534;
+}
+
+.Juno {
+  color: #EA5534;
+}
+
+h2 {
+  font-family: 'Karla', cursive;
+  font-size: 2rem;
 }
 
 
 
-p {
-  font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-}
 
 .project-button {
   font-family:  sans-serif;

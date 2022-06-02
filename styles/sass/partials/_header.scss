@@ -1,7 +1,10 @@
+header {
+    height: 100vh;
+}
+
 .mainHeader {
     display: flex;
     justify-content: space-between;
-
 
 
     .logo,
@@ -67,25 +70,13 @@
 }
 
 .headerDisplay {
-    padding-top: 100px;
     display: flex;
     justify-content: space-between;
+    padding-top: 200px;
 
     .text-container {
-        display: flex;
         flex-direction: column;
-
-         &::before {
-            position: absolute;
-            margin-top: 260px;
-            content: '<p>';
-            font-family: 'Cedarville Cursive', cursive;
-             font-size: 17px;
-            color: rgb(141, 136, 136);
-        }
     }
-    
-    
     
     a {
         text-decoration: none;
@@ -93,25 +84,7 @@
         width: 40%;
     }
     
-    p {
-        position: relative;
-        font-size: 17px;
-        color: rgb(141, 136, 136);
-
-        &::before {
-            position: absolute;
-            margin-top: 25px;
-            content: '</p>';
-            font-family: 'Cedarville Cursive', cursive;
-        }
-        
-       
-        
-    }
-    
-
-
-     .headerImage {
+     .image-container {
         width: 45%;
         img {
             max-width: 100%; 
@@ -124,8 +97,7 @@
     display: flex;
     justify-content: flex-start;
 
-    a{
-
+    a {
         padding-right: 100px;
     }
 }

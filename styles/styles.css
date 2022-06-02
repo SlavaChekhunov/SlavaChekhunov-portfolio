@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Karla:wght@200;400;700&family=Nanum+Pen+Script&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -237,7 +235,7 @@ html {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
 }
 h1 .space {
@@ -245,8 +243,34 @@ h1 .space {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+}
+
+.smallerText {
+  font-size: 1.2rem;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.smallerTextZoom {
+  font-size: 1.2rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #EA5534;
+}
+
+.learn {
+  font-size: 1.4rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #EA5534;
+}
+
+.Juno {
+  color: #EA5534;
+}
+
+h2 {
+  font-family: "Karla", cursive;
+  font-size: 2rem;
 }
 
 .project-button {
@@ -317,6 +341,212 @@ p {
   margin-top: 2.5px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+.about .aboutMatrix {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.about .aboutMatrix .textContainer {
+  width: 50%;
+}
+.about .aboutMatrix .textContainer::before {
+  content: "<p>";
+  font-family: "Cedarville Cursive", cursive;
+}
+.about .aboutMatrix .textContainer::after {
+  content: "</p>";
+  font-family: "Cedarville Cursive", cursive;
+}
+.about .skillsSphere {
+  padding-top: 50px;
+}
+.about .skillsSphere .myCanvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects {
+  padding-top: 100px;
+}
+.projects .firstRow,
+.projects .secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.projects .firstRow img,
+.projects .secondRow img {
+  border-radius: 25px;
+  width: 550px;
+}
+.projects .firstRow .portfolioOne,
+.projects .firstRow .portfolioTwo,
+.projects .firstRow .portfolioThree,
+.projects .firstRow .portfolioFour,
+.projects .secondRow .portfolioOne,
+.projects .secondRow .portfolioTwo,
+.projects .secondRow .portfolioThree,
+.projects .secondRow .portfolioFour {
+  position: relative;
+}
+.projects .firstRow .modalOne,
+.projects .firstRow .modalTwo,
+.projects .firstRow .modalThree,
+.projects .firstRow .modalFour,
+.projects .secondRow .modalOne,
+.projects .secondRow .modalTwo,
+.projects .secondRow .modalThree,
+.projects .secondRow .modalFour {
+  position: absolute;
+  border-radius: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 550px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+  overflow: hidden;
+}
+.projects .firstRow .modalOne h3,
+.projects .firstRow .modalTwo h3,
+.projects .firstRow .modalThree h3,
+.projects .firstRow .modalFour h3,
+.projects .secondRow .modalOne h3,
+.projects .secondRow .modalTwo h3,
+.projects .secondRow .modalThree h3,
+.projects .secondRow .modalFour h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.projects .firstRow .modalOne p,
+.projects .firstRow .modalTwo p,
+.projects .firstRow .modalThree p,
+.projects .firstRow .modalFour p,
+.projects .secondRow .modalOne p,
+.projects .secondRow .modalTwo p,
+.projects .secondRow .modalThree p,
+.projects .secondRow .modalFour p {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+.projects .firstRow .modalOne ul,
+.projects .firstRow .modalTwo ul,
+.projects .firstRow .modalThree ul,
+.projects .firstRow .modalFour ul,
+.projects .secondRow .modalOne ul,
+.projects .secondRow .modalTwo ul,
+.projects .secondRow .modalThree ul,
+.projects .secondRow .modalFour ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.projects .firstRow .modalOne li,
+.projects .firstRow .modalTwo li,
+.projects .firstRow .modalThree li,
+.projects .firstRow .modalFour li,
+.projects .secondRow .modalOne li,
+.projects .secondRow .modalTwo li,
+.projects .secondRow .modalThree li,
+.projects .secondRow .modalFour li {
+  color: black;
+  background-color: white;
+  padding: 8px 16px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.projects .firstRow .modal-active,
+.projects .secondRow .modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.projects .project-btn {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #EA5534;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.projects .project-btn:hover {
+  background-color: white;
+  color: #EA5534;
+}
+.projects .project-btn:focus {
+  background-color: #EA5534;
+  color: #fff;
+}
+
+.contact {
+  background-color: #EBF8FF;
+}
+
+footer {
+  padding: 20px;
+  background-color: #084b6d;
+}
+footer p {
+  margin: 0;
+  color: white;
+  text-align: center;
 }
 
 nav li {
@@ -668,18 +898,8 @@ nav li:last-child {
   color: rgb(241, 92, 46);
 }
 
-.tagcloud {
-  display: inline-block;
-  top: 100px;
-  left: 32%;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 20px;
-}
-
-.tagcloud--item:hover {
-  color: #FFC300;
+header {
+  height: 100vh;
 }
 
 .mainHeader {
@@ -756,51 +976,29 @@ nav li:last-child {
 }
 
 .headerDisplay {
-  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 200px;
 }
 .headerDisplay .text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.headerDisplay .text-container::before {
-  position: absolute;
-  margin-top: 260px;
-  content: "<p>";
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 17px;
-  color: rgb(141, 136, 136);
 }
 .headerDisplay a {
   text-decoration: none;
   margin-top: 25px;
   width: 40%;
 }
-.headerDisplay p {
-  position: relative;
-  font-size: 17px;
-  color: rgb(141, 136, 136);
-}
-.headerDisplay p::before {
-  position: absolute;
-  margin-top: 25px;
-  content: "</p>";
-  font-family: "Cedarville Cursive", cursive;
-}
-.headerDisplay .headerImage {
+.headerDisplay .image-container {
   width: 45%;
 }
-.headerDisplay .headerImage img {
+.headerDisplay .image-container img {
   max-width: 100%;
   vertical-align: middle;
 }
@@ -835,7 +1033,7 @@ nav li:last-child {
   cursor: pointer;
   -webkit-animation: animation 1s ease-in-out forwards;
           animation: animation 1s ease-in-out forwards;
-  color: cyan;
+  color: CYAN;
 }
 
 @-webkit-keyframes animation {
@@ -971,8 +1169,10 @@ nav li a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.inner-container .contact-text h3 {
-  margin-bottom: 50px;
+.inner-container .contact-text {
+  padding-top: 50px;
+  padding-right: 90px;
+  width: 40%;
 }
 .inner-container .contact-text ul {
   display: -webkit-box;
@@ -997,6 +1197,7 @@ nav li a:hover {
 }
 .inner-container .contact-text ul li i {
   color: black;
+  font-size: 1.6rem;
 }
 .inner-container .contact-text ul li:hover {
   -webkit-transform: scale(1.2);
@@ -1018,7 +1219,7 @@ nav li a:hover {
   padding: 11px 15px 11px;
 }
 .inner-container .contact-input {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,40 +1227,41 @@ nav li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 70px;
 }
 .inner-container .contact-input input,
 .inner-container .contact-input textarea {
   padding: 0 0 10px 5px;
-  border: none;
   margin-bottom: 40px;
-  color: #333;
+  border-radius: 5px;
+  color: grey;
 }
 .inner-container .contact-input input::-webkit-input-placeholder, .inner-container .contact-input textarea::-webkit-input-placeholder {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
-  line-height: 1.2rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .inner-container .contact-input input::-moz-placeholder, .inner-container .contact-input textarea::-moz-placeholder {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
-  line-height: 1.2rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .inner-container .contact-input input:-ms-input-placeholder, .inner-container .contact-input textarea:-ms-input-placeholder {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
-  line-height: 1.2rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .inner-container .contact-input input::-ms-input-placeholder, .inner-container .contact-input textarea::-ms-input-placeholder {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
-  line-height: 1.2rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .inner-container .contact-input input::placeholder,
@@ -1067,19 +1269,16 @@ nav li a:hover {
   font-size: 0.8rem;
   color: #084b6d;
   opacity: 1;
-  line-height: 1.2rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .inner-container .contact-input input:focus,
 .inner-container .contact-input textarea:focus {
-  border-bottom: 1px solid #084b6d;
-}
-.inner-container .contact-input input {
-  border-bottom: 1px solid #084b6d;
+  border-bottom: 2px solid #EBF8FF;
 }
 .inner-container .contact-input textarea {
   min-height: 130px;
-  border: 1px solid #084b6d;
+  border: 2px solid #084b6d;
 }
 
 button {
@@ -1102,190 +1301,6 @@ button:hover {
 button:focus {
   background-color: #084b6d;
   color: #fff;
-}
-
-section {
-  padding-bottom: 100px;
-}
-
-.about .aboutMatrix {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.about .aboutMatrix .textContainer {
-  padding-top: 70px;
-  width: 50%;
-}
-.about .aboutMatrix .textContainer::before {
-  content: "<p>";
-  font-family: "Cedarville Cursive", cursive;
-}
-.about .aboutMatrix .textContainer::after {
-  content: "</p>";
-  font-family: "Cedarville Cursive", cursive;
-}
-.about h2 {
-  margin-top: 70px;
-  margin-bottom: 30px;
-  text-align: center;
-  position: relative;
-}
-.about h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.about h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-
-.projects .movie-button {
-  text-decoration: none;
-  color: #084b6d;
-  background-color: transparent;
-  padding: 10px 24px;
-  border: 2px solid #084b6d;
-  font-size: 0.8rem;
-  font-weight: bold;
-  line-height: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.projects .movie-button:hover {
-  background-color: #084b6d;
-  color: #fff;
-}
-.projects .movie-button:focus {
-  background-color: #084b6d;
-  color: #fff;
-}
-.projects .projectView {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects .projectView .movie {
-  width: 85%;
-}
-.projects .projectView .movie img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-.projects .projectView .description {
-  padding-top: 150px;
-  padding-right: 50px;
-}
-.projects .projectViewTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.projects .projectViewTwo .planted {
-  width: 100%;
-}
-.projects .projectViewTwo .planted img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-.projects .projectViewTwo .description {
-  padding-top: 150px;
-  padding-left: 65px;
-}
-.projects h2 {
-  text-align: center;
-  position: relative;
-}
-.projects h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.projects h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-
-.contact h2 {
-  text-align: center;
-  position: relative;
-}
-.contact h2::before {
-  content: "";
-  position: absolute;
-  width: 485px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 50px 0 -530px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
-}
-.contact h2::after {
-  content: "";
-  position: absolute;
-  width: 410px;
-  background-color: #084b6d;
-  height: 5px;
-  border-radius: 10px;
-  margin: 13px 0 0 50px;
-  background-image: linear-gradient(45deg, #084b6d, cyan, #084b6d);
-  background-size: 400%;
-  -webkit-animation: bg-animation 20s infinite;
-          animation: bg-animation 20s infinite;
 }
 
 @media (max-width: 1000px) {
