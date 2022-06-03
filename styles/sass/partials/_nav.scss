@@ -1,57 +1,113 @@
-nav {
+body {
+  position: relative;
+}
+
+.btn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  ul {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    list-style: none;
-    padding: 0;
-  }
-
-
-  li:last-child {
-    margin-right: 70px;
-    // border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid $primary;
+  width: 30px;
+  height: 30px;
+  
+  &:hover {
     cursor: pointer;
-  a {
-    padding: 11px 15px 11px;
-    position: relative;
-    &::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 4px;
-    background-color: cyan;
-    transition: transform 300ms ease-in-out;
-
-    transform: scaleX(0);
-    }
-    &:hover::before,
-    &:focus::before {
-      transform: scaleX(1);
-    }
-  }
   }
 
-  li a {
-    color: rgb(97, 96, 96);
-    display: inline-block;
-    width: 100%;
-    font-size: 1.15rem;
-    padding: 15px 40px 10px 40px;
-    text-decoration: none;
-    text-align: center;
-    &:hover {
-      color: black;
-    }
+  span {
+   width: 30px;
+   height: 4px;
+   background-color: rgb(241, 92, 46);;
+   display: flex;
+   position: absolute;
+   transition: 0.2s ease-in;
   }
+
 }
 
 
+.btn span:nth-child(1) {
+  top: 20%;
+}
+
+.btn span:nth-child(2) {
+  top: 80%;
+}
+
+.btn.is-active span {
+  background-color: white;
+}
+
+
+.btn.is-active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+.btn.is-active span:nth-child(2) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.menu {
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  z-index: 1;
+  transition: 0.2s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.menu.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 10px;
+}
+
+.menu_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.menu_link {
+  position: relative;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu_link:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  display: inline-flex;
+  background-color: red;
+  transition: 0.2s ease-in;
+}
+
+.menu_link:hover:after {
+  width: 100%;
+
+}

@@ -10,19 +10,22 @@ for (let i = 0; i < elements.length; i++) {
   })
 }
 
-const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector(".headerNav");
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    navLinks.classList.toggle("active");
-    menuOpen = false;
-  }
+const menu = document.querySelector('.btn');
+const navLinks = document.querySelector(".menu");
+const menuList = document.querySelector('.menu_list')
+
+menu.addEventListener('click', function () {
+  menu.classList.toggle('is-active');
+  navLinks.classList.toggle('is-active');
 })
+
+menuList.addEventListener('click', () => {
+  menu.classList.remove('is-active')
+  navLinks.classList.remove('is-active')
+})
+
+
+
 
 const portfolio = document.querySelector('.portfolioOne');
 const portfolioTwo = document.querySelector('.portfolioTwo');

@@ -43,16 +43,8 @@
             .fa-github {
                 color: #171515;
             }
-
-
-      
-
         }
-
-       
     }
-    
-
         a {
             padding: 11px 15px 11px;
         
@@ -61,7 +53,7 @@
 }
 
   .contact-input {
-    width: 60%;
+    width: 80%;
     display: flex;
   flex-direction: column;
   padding-top: 70px;
@@ -84,14 +76,11 @@ textarea {
   }
 }
 
-
-
 textarea {
   min-height: 130px;
   border: 2px solid $primary;
 }
 }
-
 }
 
 button {

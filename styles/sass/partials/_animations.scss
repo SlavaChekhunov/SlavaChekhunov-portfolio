@@ -1,29 +1,5 @@
-$nav-load-time: 300ms;
-$nav-link-load-time: 500ms;
-$article-load-delay: $nav-link-load-time + $nav-load-time;
-$image-load-delay: $nav-link-load-time + $nav-load-time + 200ms;
-
-
-
-nav {
-    li {
-    animation-name: nav-links-load;
-    animation-duration: $nav-link-load-time;
-    animation-timing-function: ease-in;
-    animation-delay: $nav-load-time;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-    }
-
-    li:last-child {
-        animation-name: nav-last-link-load;
-        transform: translateX(1000%);
-    }
-}
-
-.mainHeader {
-    animation: nav-load $nav-load-time ease-in;
-}
+$article-load-delay: 300ms;
+$image-load-delay: $article-load-delay + 200ms;
 
 .headerDisplay {
     .text-container {
@@ -32,21 +8,15 @@ nav {
             transform: translateY(-20px);
             opacity: 0;
         }
-
-
 }
 
 .headerImage {
-
-
     .image-container {
         animation: image-load 300ms ease-in $image-load-delay + 100ms;
         animation-fill-mode: forwards;
         transform: translateY(-20px);
         opacity: 0;
     }
-
-
 }
 
 .about{

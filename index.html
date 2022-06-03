@@ -11,25 +11,18 @@
     <title>Slava's Portfolio</title>
 </head>
 <body>
-    <!-- HEADER -->
+    <div class="btn">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu">
+        <ul class="menu_list">
+                    <li class="menu_list"><a href="#projects" class="menu_link">Projects</a></li>
+                    <li class="menu_list"><a href="#about" class="menu_link">About me</a></li>
+                    <li class="menu_list"><a href="#contact" class="menu_link">Contact</a></li>
+        </ul>
+    </div>
     <header>
-        <div class="mainHeader wrapper">
-            <div class="logo">
-                <img width='30' height='40'src="./assets/Picture6.png" alt="Web developer logo" class="animation-logo">
-            </div>
-            <div class="menu-btn">
-                <div class="menuBurger"></div>
-            </div>
-            <nav class="headerNav">
-                <ul>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#contact">Contact me!</a></li>
-                </ul>
-            </nav>
-        </div>
-
         <section class="headerDisplay wrapper">
             <div class="headerText">
                 <div class="text-container">
@@ -230,7 +223,7 @@
 <stop offset="1" stop-color="#502019"/>
 </linearGradient>
 </defs>
-</svg>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -320,15 +313,16 @@
         </div>
             <div class="aboutMatrix wrapper">
                 <div class="textContainer">
-                    <p>Thanks for scrolling this far!! 😊 I'm a recent <span class="Juno">Juno College of Technology</span> graduate <span class="smallerText">(cohort 40 aka WD40)</span>, who is passionate about improving the user experience on the web. I also graduated from York University with a bachelors of honors in biochemistry.</p>
-                    <p>Other than coding, I spend most of my free time working out or playing Warzone <span class="smallerText">(add me!)</span>. 😎 I've also been going outside to listen to podcasts on my walks, so If you have any good podcast recommendations feel free to reach out to me!
+                    <p>Thanks for scrolling this far! 😊 I'm a recent <span class="Juno">Juno College of Technology</span> graduate, who is passionate about improving the user experience on the web. I also graduated from York University with a bachelors of honors in biochemistry.</p>
+                    <p>Other than coding, I spend most of my free time working out or playing Warzone. 😎 I've also been going outside to listen to podcasts on my walks, so If you have any good podcast recommendations feel free to reach out to me!
                     </p>
                 </div>
-
-                <img src='./assets/mockuper.png' alt="profile picture" width="300px" height="300px">
+                <div class="image-profile">
+                    <img src='./assets/wd40-centaur-done.png' alt="profile picture" width="320px" height="338px">
+                </div>
             </div>
             <div class="skillsSphere wrapper">
-                <h2>My Toolkit 💻</h2>
+                <h2>My Skills 💻</h2>
                 <span class="smallerTextZoom">Zoom in/out with your mousewheel!</span>
                 <div class="myCanvas" id="myCanvasContainer">
                     <canvas width="700" height="700" id="myCanvas">
@@ -348,7 +342,6 @@
                                 <li><a href="#" target="_blank">Accessibility</a></li>
                             </ul>
                     </canvas>
-                    <!-- screen-reader class to describe the canvas -->
                 </div>
             </div>
     </section>
@@ -358,7 +351,7 @@
         <div class="inner-container wrapper">
             <div class="contact-text">
                <h2>Let's Connect 📧</h2>
-                <p>If you ever want to chat with me <span class="smallerText">(virtually)</span> - you can find me on social media or you can send me a message here!</p>
+                <p>If you ever want to chat with me - you can find me on social media or you can send me a message here!</p>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/slava-chekhunov/">
                          <i class="fa-brands fa-linkedin-in"></i>
@@ -389,7 +382,7 @@
     </section>
     <footer class="made">
         <p>
-            Developed and designed with love ❤ Slava Chekhunov at Juno College of Technology
+            Developed with love ❤ Slava Chekhunov at Juno College of Technology
         </p>
     </footer>
 

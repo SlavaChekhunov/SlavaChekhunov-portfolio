@@ -23,6 +23,15 @@ section {
             }
         }
 
+        .image-profile {
+            padding-right: 50px;
+            img {
+                border-radius: 10px;
+            max-width: 100%; 
+            vertical-align: middle;
+            }
+        }
+
         
     }
 
@@ -32,6 +41,11 @@ section {
            display: flex;
            justify-content: center;
            align-items: center;
+
+           canvas {
+               width: 70%;
+               height: 70%;
+           }
        }
     }
 }
@@ -47,7 +61,8 @@ section {
 
         img {
             border-radius: 25px;
-            width: 550px;
+            max-width: 100%; 
+            vertical-align: middle;
         }
 
         .portfolioOne,
@@ -71,8 +86,6 @@ section {
             left: 0;
             right: 0;
             bottom: 0;
-            width: 550px;
-            height: 380px;
             background-color: rgba(0, 0, 0, 0.85);
             display: flex;
             justify-content: space-around;
