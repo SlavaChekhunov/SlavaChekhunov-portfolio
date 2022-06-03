@@ -1465,3 +1465,92 @@ button:focus {
     margin: 0;
   }
 }
+@media (max-width: 550px) {
+  .about .aboutMatrix .image-profile {
+    padding: 0;
+  }
+  .about .aboutMatrix .textContainer {
+    padding-bottom: 50px;
+  }
+
+  .headerDisplay .text-container h1 {
+    font-size: 0.6rem;
+  }
+
+  .menu_list .menu_link {
+    font-size: 2.1rem;
+  }
+
+  .projects .portfolioOne .modalOne h3,
+.projects .portfolioOne .modalTwo h3,
+.projects .portfolioOne .modalThree h3,
+.projects .portfolioOne .modalFour h3,
+.projects .portfolioTwo .modalOne h3,
+.projects .portfolioTwo .modalTwo h3,
+.projects .portfolioTwo .modalThree h3,
+.projects .portfolioTwo .modalFour h3,
+.projects .portfolioThree .modalOne h3,
+.projects .portfolioThree .modalTwo h3,
+.projects .portfolioThree .modalThree h3,
+.projects .portfolioThree .modalFour h3,
+.projects .portfolioFour .modalOne h3,
+.projects .portfolioFour .modalTwo h3,
+.projects .portfolioFour .modalThree h3,
+.projects .portfolioFour .modalFour h3 {
+    font-size: 1.2rem;
+  }
+  .projects .portfolioOne .modalOne p,
+.projects .portfolioOne .modalTwo p,
+.projects .portfolioOne .modalThree p,
+.projects .portfolioOne .modalFour p,
+.projects .portfolioTwo .modalOne p,
+.projects .portfolioTwo .modalTwo p,
+.projects .portfolioTwo .modalThree p,
+.projects .portfolioTwo .modalFour p,
+.projects .portfolioThree .modalOne p,
+.projects .portfolioThree .modalTwo p,
+.projects .portfolioThree .modalThree p,
+.projects .portfolioThree .modalFour p,
+.projects .portfolioFour .modalOne p,
+.projects .portfolioFour .modalTwo p,
+.projects .portfolioFour .modalThree p,
+.projects .portfolioFour .modalFour p {
+    font-size: 0.8rem;
+  }
+  .projects .portfolioOne .modalOne li,
+.projects .portfolioOne .modalTwo li,
+.projects .portfolioOne .modalThree li,
+.projects .portfolioOne .modalFour li,
+.projects .portfolioTwo .modalOne li,
+.projects .portfolioTwo .modalTwo li,
+.projects .portfolioTwo .modalThree li,
+.projects .portfolioTwo .modalFour li,
+.projects .portfolioThree .modalOne li,
+.projects .portfolioThree .modalTwo li,
+.projects .portfolioThree .modalThree li,
+.projects .portfolioThree .modalFour li,
+.projects .portfolioFour .modalOne li,
+.projects .portfolioFour .modalTwo li,
+.projects .portfolioFour .modalThree li,
+.projects .portfolioFour .modalFour li {
+    padding: 4px 8px;
+  }
+  .projects .project-btn {
+    padding: 6px 10px;
+    font-size: 1rem;
+    line-height: 0.8rem;
+    cursor: pointer;
+  }
+}
+@media (max-width: 450px) {
+  .headerDisplay .text-container h1 {
+    font-size: 0.1rem;
+  }
+  .headerDisplay .text-container p {
+    font-size: 1rem;
+  }
+
+  .menu_list .menu_link {
+    font-size: 1.8rem;
+  }
+}

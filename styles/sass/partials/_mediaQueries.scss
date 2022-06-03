@@ -139,3 +139,93 @@
    }
 }
 
+
+@media (max-width: 550px) { 
+
+    
+
+    .about {
+        .aboutMatrix {
+            .image-profile {
+                padding: 0;
+            }
+            
+            .textContainer {
+                padding-bottom: 50px;
+            }
+        }
+
+    }
+
+
+    .headerDisplay {
+        .text-container {
+            h1 {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .menu_list {
+        .menu_link {
+            font-size: 2.1rem;
+        }
+    }
+
+    .projects {
+        .portfolioOne,
+        .portfolioTwo,
+        .portfolioThree,
+        .portfolioFour {
+        .modalOne,
+        .modalTwo,
+        .modalThree,
+        .modalFour {
+            h3 {
+                font-size: 1.2rem;
+            }
+            
+            p {
+                font-size: 0.8rem;
+            }
+            
+            li {
+                padding: 4px 8px;
+            }
+
+        }
+        }
+        .project-btn {
+        padding: 6px 10px;
+        font-size: 1rem;
+        line-height: 0.8rem;
+        cursor: pointer;
+        }
+    }
+
+}
+
+@media (max-width: 450px) { 
+    .headerDisplay {
+        .text-container {
+            h1 {
+                font-size: 0.1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+     .menu_list {
+        .menu_link {
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+
+
+
