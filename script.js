@@ -66,7 +66,7 @@ window.onload = function () {
       depth: 0.8,
       maxSpeed: 0.12,
       weight: true,
-      textHeight: 25,
+      textHeight: 45,
       textFont: "Karla, sans-serif",
     });
   } catch (e) {
