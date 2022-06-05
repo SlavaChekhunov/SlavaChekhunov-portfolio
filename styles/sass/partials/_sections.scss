@@ -13,12 +13,12 @@ section {
             width: 50%;
             &::before {
                 content: '<p>';
-                font-family: 'Cedarville Cursive', cursive;
+                font-family: 'Cedarville Cursive', sans-serif;
             }
 
             &::after {
                 content: '</p>';
-                font-family: 'Cedarville Cursive', cursive;
+                font-family: 'Cedarville Cursive', sans-serif;
 
             }
         }
@@ -49,8 +49,6 @@ section {
        }
     }
 }
-
-
 
 .projects {
    padding-top: 100px;
@@ -134,8 +132,8 @@ section {
     }
 
     .project-btn {
-        margin: 10px;
-        text-decoration: none;
+  margin: 10px;
+  text-decoration: none;
   color: white;
   background-color: #EA5534;
   padding: 12px 24px;
@@ -156,13 +154,9 @@ section {
   
 }
 }
-
 .contact {
     background-color: #EBF8FF;
-
-
 }
-
 footer {
     padding: 20px;
     background-color: $primary;

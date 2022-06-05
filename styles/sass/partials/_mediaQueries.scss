@@ -224,6 +224,76 @@
         }
     }
 
+    .contact {
+    .contact-text {
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+           ul {
+               li {
+                   i {
+                       font-size: 1.5rem;
+                   }
+               }
+           }
+       }
+   }
+
+
+
+}
+
+
+@media (max-width: 420px) { 
+    .headerDisplay {
+        .text-container {
+            h1 span{
+                font-size: 4rem;
+            }
+
+            .project-button {
+                padding: 10px 24px;
+            }
+        }
+    }
+
+     .contact {
+    .contact-text {
+        padding: 0;
+       }
+   }
+
+}
+
+
+@media (max-width: 390px) { 
+    .headerDisplay {
+        .text-container {
+            h1 span{
+                font-size: 3.6rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .project-button {
+               font-size: 11px;
+
+            }
+
+            
+        }
+    }
+                .menu_list {
+            .menu_link {
+            font-size: 1.4rem;
+            }
+                }
 }
 
 

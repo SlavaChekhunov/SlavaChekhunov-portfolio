@@ -364,11 +364,11 @@ section {
 }
 .about .aboutMatrix .textContainer::before {
   content: "<p>";
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive", sans-serif;
 }
 .about .aboutMatrix .textContainer::after {
   content: "</p>";
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive", sans-serif;
 }
 .about .aboutMatrix .image-profile {
   padding-right: 50px;
@@ -1552,5 +1552,42 @@ button:focus {
 
   .menu_list .menu_link {
     font-size: 1.8rem;
+  }
+
+  .contact .contact-text h2 {
+    font-size: 1.8rem;
+  }
+  .contact .contact-text p {
+    font-size: 1rem;
+  }
+  .contact .contact-text ul li i {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .headerDisplay .text-container h1 span {
+    font-size: 4rem;
+  }
+  .headerDisplay .text-container .project-button {
+    padding: 10px 24px;
+  }
+
+  .contact .contact-text {
+    padding: 0;
+  }
+}
+@media (max-width: 390px) {
+  .headerDisplay .text-container h1 span {
+    font-size: 3.6rem;
+  }
+  .headerDisplay .text-container p {
+    font-size: 0.9rem;
+  }
+  .headerDisplay .text-container .project-button {
+    font-size: 11px;
+  }
+
+  .menu_list .menu_link {
+    font-size: 1.4rem;
   }
 }
