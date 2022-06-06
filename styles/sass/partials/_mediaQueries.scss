@@ -261,6 +261,38 @@
         }
     }
 
+    .projects {
+        .portfolioOne,
+        .portfolioTwo,
+        .portfolioThree,
+        .portfolioFour {
+        .modalOne,
+        .modalTwo,
+        .modalThree,
+        .modalFour {
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            p {
+                font-size: 0.8rem;
+            }
+            
+            li {
+                padding: 3px 6px;
+            }
+
+        }
+        }
+        .project-btn {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+        line-height: 0.6rem;
+        }
+    }
+
+
+
      .contact {
     .contact-text {
         padding: 0;
@@ -318,6 +350,24 @@
 
             
         }
+    }
+
+      .projects {
+        .portfolioOne,
+        .portfolioTwo,
+        .portfolioThree,
+        .portfolioFour {
+        .modalOne,
+        .modalTwo,
+        .modalThree,
+        .modalFour {
+            padding: 0;
+            h3 {
+                font-size: 0.9rem;
+            }
+        }
+        }
+        
     }
                 .menu_list {
             .menu_link {
