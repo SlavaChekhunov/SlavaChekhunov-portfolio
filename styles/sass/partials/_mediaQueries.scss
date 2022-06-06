@@ -297,5 +297,47 @@
 }
 
 
+@media (max-width: 350px) { 
+    .headerDisplay {
+        .text-container {
+            h1 span{
+                font-size: 3.2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .project-button {
+               font-size: 9px;
+            }
+            .project-button span{
+              width: 2px;
+              height: 8px;
+            }
+
+            
+        }
+    }
+                .menu_list {
+            .menu_link {
+            font-size: 0.85rem;
+            }
+            }
+
+             .contact {
+    .contact-text {
+           ul {
+               li {
+                   i {
+                       font-size: 1rem;
+                   }
+               }
+           }
+       }
+   }
+}
+
+
 
 

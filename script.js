@@ -64,7 +64,7 @@ window.onload = function () {
       outlineColour: "transparent",
       reverse: true,
       depth: 0.8,
-      maxSpeed: 0.12,
+      maxSpeed: 0.15,
       weight: true,
       textHeight: 45,
       textFont: "Karla, sans-serif",
