@@ -401,7 +401,8 @@ section {
   padding-top: 100px;
 }
 .projects .firstRow,
-.projects .secondRow {
+.projects .secondRow,
+.projects .thirdRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +412,8 @@ section {
           flex-direction: row;
 }
 .projects .firstRow img,
-.projects .secondRow img {
+.projects .secondRow img,
+.projects .thirdRow img {
   border-radius: 25px;
   max-width: 100%;
   vertical-align: middle;
@@ -420,20 +422,41 @@ section {
 .projects .firstRow .portfolioTwo,
 .projects .firstRow .portfolioThree,
 .projects .firstRow .portfolioFour,
+.projects .firstRow .portfolioFive,
+.projects .firstRow .portfolioSix,
 .projects .secondRow .portfolioOne,
 .projects .secondRow .portfolioTwo,
 .projects .secondRow .portfolioThree,
-.projects .secondRow .portfolioFour {
+.projects .secondRow .portfolioFour,
+.projects .secondRow .portfolioFive,
+.projects .secondRow .portfolioSix,
+.projects .thirdRow .portfolioOne,
+.projects .thirdRow .portfolioTwo,
+.projects .thirdRow .portfolioThree,
+.projects .thirdRow .portfolioFour,
+.projects .thirdRow .portfolioFive,
+.projects .thirdRow .portfolioSix {
   position: relative;
+  width: 50%;
 }
 .projects .firstRow .modalOne,
 .projects .firstRow .modalTwo,
 .projects .firstRow .modalThree,
 .projects .firstRow .modalFour,
+.projects .firstRow .modalFive,
+.projects .firstRow .modalSix,
 .projects .secondRow .modalOne,
 .projects .secondRow .modalTwo,
 .projects .secondRow .modalThree,
-.projects .secondRow .modalFour {
+.projects .secondRow .modalFour,
+.projects .secondRow .modalFive,
+.projects .secondRow .modalSix,
+.projects .thirdRow .modalOne,
+.projects .thirdRow .modalTwo,
+.projects .thirdRow .modalThree,
+.projects .thirdRow .modalFour,
+.projects .thirdRow .modalFive,
+.projects .thirdRow .modalSix {
   position: absolute;
   border-radius: 25px;
   padding-left: 50px;
@@ -466,10 +489,20 @@ section {
 .projects .firstRow .modalTwo h3,
 .projects .firstRow .modalThree h3,
 .projects .firstRow .modalFour h3,
+.projects .firstRow .modalFive h3,
+.projects .firstRow .modalSix h3,
 .projects .secondRow .modalOne h3,
 .projects .secondRow .modalTwo h3,
 .projects .secondRow .modalThree h3,
-.projects .secondRow .modalFour h3 {
+.projects .secondRow .modalFour h3,
+.projects .secondRow .modalFive h3,
+.projects .secondRow .modalSix h3,
+.projects .thirdRow .modalOne h3,
+.projects .thirdRow .modalTwo h3,
+.projects .thirdRow .modalThree h3,
+.projects .thirdRow .modalFour h3,
+.projects .thirdRow .modalFive h3,
+.projects .thirdRow .modalSix h3 {
   color: white;
   font-weight: bold;
   font-size: 2rem;
@@ -478,10 +511,20 @@ section {
 .projects .firstRow .modalTwo p,
 .projects .firstRow .modalThree p,
 .projects .firstRow .modalFour p,
+.projects .firstRow .modalFive p,
+.projects .firstRow .modalSix p,
 .projects .secondRow .modalOne p,
 .projects .secondRow .modalTwo p,
 .projects .secondRow .modalThree p,
-.projects .secondRow .modalFour p {
+.projects .secondRow .modalFour p,
+.projects .secondRow .modalFive p,
+.projects .secondRow .modalSix p,
+.projects .thirdRow .modalOne p,
+.projects .thirdRow .modalTwo p,
+.projects .thirdRow .modalThree p,
+.projects .thirdRow .modalFour p,
+.projects .thirdRow .modalFive p,
+.projects .thirdRow .modalSix p {
   text-align: center;
   color: white;
   font-size: 1rem;
@@ -490,10 +533,20 @@ section {
 .projects .firstRow .modalTwo ul,
 .projects .firstRow .modalThree ul,
 .projects .firstRow .modalFour ul,
+.projects .firstRow .modalFive ul,
+.projects .firstRow .modalSix ul,
 .projects .secondRow .modalOne ul,
 .projects .secondRow .modalTwo ul,
 .projects .secondRow .modalThree ul,
-.projects .secondRow .modalFour ul {
+.projects .secondRow .modalFour ul,
+.projects .secondRow .modalFive ul,
+.projects .secondRow .modalSix ul,
+.projects .thirdRow .modalOne ul,
+.projects .thirdRow .modalTwo ul,
+.projects .thirdRow .modalThree ul,
+.projects .thirdRow .modalFour ul,
+.projects .thirdRow .modalFive ul,
+.projects .thirdRow .modalSix ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,10 +561,20 @@ section {
 .projects .firstRow .modalTwo li,
 .projects .firstRow .modalThree li,
 .projects .firstRow .modalFour li,
+.projects .firstRow .modalFive li,
+.projects .firstRow .modalSix li,
 .projects .secondRow .modalOne li,
 .projects .secondRow .modalTwo li,
 .projects .secondRow .modalThree li,
-.projects .secondRow .modalFour li {
+.projects .secondRow .modalFour li,
+.projects .secondRow .modalFive li,
+.projects .secondRow .modalSix li,
+.projects .thirdRow .modalOne li,
+.projects .thirdRow .modalTwo li,
+.projects .thirdRow .modalThree li,
+.projects .thirdRow .modalFour li,
+.projects .thirdRow .modalFive li,
+.projects .thirdRow .modalSix li {
   color: black;
   background-color: white;
   padding: 8px 16px;
@@ -519,7 +582,8 @@ section {
   border-radius: 15px;
 }
 .projects .firstRow .modal-active,
-.projects .secondRow .modal-active {
+.projects .secondRow .modal-active,
+.projects .thirdRow .modal-active {
   visibility: visible;
   opacity: 1;
 }
@@ -1248,7 +1312,6 @@ button:focus {
   .image-container {
     display: none;
   }
-
   .about .aboutMatrix {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1262,7 +1325,6 @@ button:focus {
     width: 100%;
     padding-bottom: 30px;
   }
-
   .contact .contact-text {
     width: 40%;
   }
@@ -1273,14 +1335,14 @@ button:focus {
     width: 90%;
     margin: 0;
   }
-
   footer {
     padding: 10px;
   }
 }
 @media (max-width: 850px) {
   .projects .firstRow,
-.projects .secondRow {
+.projects .secondRow,
+.projects .thirdRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1290,54 +1352,114 @@ button:focus {
 .projects .portfolioOne .modalTwo h3,
 .projects .portfolioOne .modalThree h3,
 .projects .portfolioOne .modalFour h3,
+.projects .portfolioOne .modalFive h3,
+.projects .portfolioOne .modalSix h3,
 .projects .portfolioTwo .modalOne h3,
 .projects .portfolioTwo .modalTwo h3,
 .projects .portfolioTwo .modalThree h3,
 .projects .portfolioTwo .modalFour h3,
+.projects .portfolioTwo .modalFive h3,
+.projects .portfolioTwo .modalSix h3,
 .projects .portfolioThree .modalOne h3,
 .projects .portfolioThree .modalTwo h3,
 .projects .portfolioThree .modalThree h3,
 .projects .portfolioThree .modalFour h3,
+.projects .portfolioThree .modalFive h3,
+.projects .portfolioThree .modalSix h3,
 .projects .portfolioFour .modalOne h3,
 .projects .portfolioFour .modalTwo h3,
 .projects .portfolioFour .modalThree h3,
-.projects .portfolioFour .modalFour h3 {
+.projects .portfolioFour .modalFour h3,
+.projects .portfolioFour .modalFive h3,
+.projects .portfolioFour .modalSix h3,
+.projects .portfolioFive .modalOne h3,
+.projects .portfolioFive .modalTwo h3,
+.projects .portfolioFive .modalThree h3,
+.projects .portfolioFive .modalFour h3,
+.projects .portfolioFive .modalFive h3,
+.projects .portfolioFive .modalSix h3,
+.projects .portfolioSix .modalOne h3,
+.projects .portfolioSix .modalTwo h3,
+.projects .portfolioSix .modalThree h3,
+.projects .portfolioSix .modalFour h3,
+.projects .portfolioSix .modalFive h3,
+.projects .portfolioSix .modalSix h3 {
     font-size: 2rem;
   }
   .projects .portfolioOne .modalOne p,
 .projects .portfolioOne .modalTwo p,
 .projects .portfolioOne .modalThree p,
 .projects .portfolioOne .modalFour p,
+.projects .portfolioOne .modalFive p,
+.projects .portfolioOne .modalSix p,
 .projects .portfolioTwo .modalOne p,
 .projects .portfolioTwo .modalTwo p,
 .projects .portfolioTwo .modalThree p,
 .projects .portfolioTwo .modalFour p,
+.projects .portfolioTwo .modalFive p,
+.projects .portfolioTwo .modalSix p,
 .projects .portfolioThree .modalOne p,
 .projects .portfolioThree .modalTwo p,
 .projects .portfolioThree .modalThree p,
 .projects .portfolioThree .modalFour p,
+.projects .portfolioThree .modalFive p,
+.projects .portfolioThree .modalSix p,
 .projects .portfolioFour .modalOne p,
 .projects .portfolioFour .modalTwo p,
 .projects .portfolioFour .modalThree p,
-.projects .portfolioFour .modalFour p {
+.projects .portfolioFour .modalFour p,
+.projects .portfolioFour .modalFive p,
+.projects .portfolioFour .modalSix p,
+.projects .portfolioFive .modalOne p,
+.projects .portfolioFive .modalTwo p,
+.projects .portfolioFive .modalThree p,
+.projects .portfolioFive .modalFour p,
+.projects .portfolioFive .modalFive p,
+.projects .portfolioFive .modalSix p,
+.projects .portfolioSix .modalOne p,
+.projects .portfolioSix .modalTwo p,
+.projects .portfolioSix .modalThree p,
+.projects .portfolioSix .modalFour p,
+.projects .portfolioSix .modalFive p,
+.projects .portfolioSix .modalSix p {
     font-size: 1rem;
   }
   .projects .portfolioOne .modalOne li,
 .projects .portfolioOne .modalTwo li,
 .projects .portfolioOne .modalThree li,
 .projects .portfolioOne .modalFour li,
+.projects .portfolioOne .modalFive li,
+.projects .portfolioOne .modalSix li,
 .projects .portfolioTwo .modalOne li,
 .projects .portfolioTwo .modalTwo li,
 .projects .portfolioTwo .modalThree li,
 .projects .portfolioTwo .modalFour li,
+.projects .portfolioTwo .modalFive li,
+.projects .portfolioTwo .modalSix li,
 .projects .portfolioThree .modalOne li,
 .projects .portfolioThree .modalTwo li,
 .projects .portfolioThree .modalThree li,
 .projects .portfolioThree .modalFour li,
+.projects .portfolioThree .modalFive li,
+.projects .portfolioThree .modalSix li,
 .projects .portfolioFour .modalOne li,
 .projects .portfolioFour .modalTwo li,
 .projects .portfolioFour .modalThree li,
-.projects .portfolioFour .modalFour li {
+.projects .portfolioFour .modalFour li,
+.projects .portfolioFour .modalFive li,
+.projects .portfolioFour .modalSix li,
+.projects .portfolioFive .modalOne li,
+.projects .portfolioFive .modalTwo li,
+.projects .portfolioFive .modalThree li,
+.projects .portfolioFive .modalFour li,
+.projects .portfolioFive .modalFive li,
+.projects .portfolioFive .modalSix li,
+.projects .portfolioSix .modalOne li,
+.projects .portfolioSix .modalTwo li,
+.projects .portfolioSix .modalThree li,
+.projects .portfolioSix .modalFour li,
+.projects .portfolioSix .modalFive li,
+.projects .portfolioSix .modalSix li {
     padding: 8px 16px;
   }
   .projects .project-btn {
@@ -1345,7 +1467,6 @@ button:focus {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-
   .contact {
     padding-bottom: 50px;
   }
@@ -1386,15 +1507,12 @@ button:focus {
   .about .aboutMatrix .textContainer {
     padding-bottom: 50px;
   }
-
   .headerDisplay .text-container h1 {
     font-size: 0.6rem;
   }
-
   .menu_list .menu_link {
     font-size: 2.1rem;
   }
-
   .projects .portfolioOne .modalOne h3,
 .projects .portfolioOne .modalTwo h3,
 .projects .portfolioOne .modalThree h3,
@@ -1463,11 +1581,9 @@ button:focus {
   .headerDisplay .text-container p {
     font-size: 1rem;
   }
-
   .menu_list .menu_link {
     font-size: 1.8rem;
   }
-
   .contact .contact-text h2 {
     font-size: 1.8rem;
   }
@@ -1485,7 +1601,6 @@ button:focus {
   .headerDisplay .text-container .project-button {
     padding: 10px 24px;
   }
-
   .projects .portfolioOne .modalOne h3,
 .projects .portfolioOne .modalTwo h3,
 .projects .portfolioOne .modalThree h3,
@@ -1545,7 +1660,6 @@ button:focus {
     font-size: 0.8rem;
     line-height: 0.6rem;
   }
-
   .contact .contact-text {
     padding: 0;
   }
@@ -1560,7 +1674,6 @@ button:focus {
   .headerDisplay .text-container .project-button {
     font-size: 11px;
   }
-
   .menu_list .menu_link {
     font-size: 1.4rem;
   }
@@ -1579,7 +1692,6 @@ button:focus {
     width: 2px;
     height: 8px;
   }
-
   .projects .portfolioOne .modalOne,
 .projects .portfolioOne .modalTwo,
 .projects .portfolioOne .modalThree,
@@ -1616,11 +1728,9 @@ button:focus {
 .projects .portfolioFour .modalFour h3 {
     font-size: 0.9rem;
   }
-
   .menu_list .menu_link {
     font-size: 0.85rem;
   }
-
   .contact .contact-text ul li i {
     font-size: 1rem;
   }

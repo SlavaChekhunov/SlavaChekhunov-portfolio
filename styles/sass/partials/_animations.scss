@@ -19,6 +19,8 @@ $image-load-delay: $article-load-delay + 200ms;
     }
 }
 
+
+
 @keyframes article-load {
     0% {
         transform: translateY(-20px);

@@ -73,19 +73,26 @@
 @media (max-width: 850px) { 
      .projects {
        .firstRow,
-       .secondRow {
+       .secondRow,
+       .thirdRow {
            flex-direction: column;
-       }
-
-       .portfolioOne,
+        }
+        
+        .portfolioOne,
         .portfolioTwo,
         .portfolioThree,
-        .portfolioFour {
-
+        .portfolioFour,
+        .portfolioFive,
+        .portfolioSix
+        {
+            
             .modalOne,
-        .modalTwo,
-        .modalThree,
-        .modalFour {
+            .modalTwo,
+            .modalThree,
+            .modalFour,
+            .modalFive,
+            .modalSix
+            {
 
 
             h3 {
@@ -351,6 +358,8 @@
             
         }
     }
+
+   
 
       .projects {
         .portfolioOne,

@@ -8,34 +8,34 @@ section {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-
+        
         .textContainer {
             width: 50%;
             &::before {
                 content: '<p>';
                 font-family: 'Cedarville Cursive', sans-serif;
             }
-
+            
             &::after {
                 content: '</p>';
                 font-family: 'Cedarville Cursive', sans-serif;
-
+                
             }
         }
-
+        
         .image-profile {
             padding-right: 50px;
             img {
                 border-radius: 10px;
-            max-width: 100%; 
+                max-width: 100%; 
             vertical-align: middle;
-            }
         }
-
-        
     }
+    
+    
+}
 
-    .skillsSphere {
+.skillsSphere {
         padding-top: 50px;
        .myCanvas {
            display: flex;
@@ -53,10 +53,11 @@ section {
 .projects {
    padding-top: 100px;
     .firstRow,
-    .secondRow {
+    .secondRow,
+    .thirdRow {
         display: flex;
         flex-direction: row;
-
+        
         img {
             border-radius: 25px;
             max-width: 100%; 
@@ -66,15 +67,20 @@ section {
         .portfolioOne,
         .portfolioTwo,
         .portfolioThree,
-        .portfolioFour {
+        .portfolioFour,
+        .portfolioFive,
+        .portfolioSix {
             position: relative;
+            width: 50%;
         }
 
 
         .modalOne,
         .modalTwo,
         .modalThree,
-        .modalFour {
+        .modalFour,
+        .modalFive,
+        .modalSix {
             position: absolute;
             border-radius: 25px;
             padding-left: 50px;
@@ -112,6 +118,7 @@ section {
                 margin: 0;
                 list-style: none;
                 padding: 0;
+
                 }
             
             li {
