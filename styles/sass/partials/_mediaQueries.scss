@@ -147,7 +147,7 @@
 }
 
 
-@media (max-width: 550px) { 
+@media (max-width: 580px) { 
 
     
 
@@ -212,7 +212,7 @@
 
 }
 
-@media (max-width: 450px) { 
+@media (max-width: 480px) { 
     .headerDisplay {
         .text-container {
             h1 {
@@ -222,6 +222,37 @@
             p {
                 font-size: 1rem;
             }
+        }
+    }
+
+    .projects {
+        .portfolioOne,
+        .portfolioTwo,
+        .portfolioThree,
+        .portfolioFour {
+        .modalOne,
+        .modalTwo,
+        .modalThree,
+        .modalFour {
+            h3 {
+                font-size: 0.8rem;
+            }
+            
+            p {
+                font-size: 0.6rem;
+            }
+            
+            li {
+                padding: 1px 2px;
+            }
+
+        }
+        }
+        .project-btn {
+        padding: 5px 8px;
+        font-size: 1rem;
+        line-height: 0.7rem;
+        cursor: pointer;
         }
     }
 
@@ -278,16 +309,13 @@
         .modalThree,
         .modalFour {
             h3 {
-                font-size: 1.1rem;
+                font-size: 0.7rem;
             }
             
             p {
-                font-size: 0.8rem;
+                font-size: 0.5rem;
             }
             
-            li {
-                padding: 3px 6px;
-            }
 
         }
         }
